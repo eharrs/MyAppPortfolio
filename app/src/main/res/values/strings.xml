@@ -3,4 +3,11 @@
 
     <string name="MainActivityTitle">My Nanodegree Apps!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="App1ButtonText">POPULAR MOVIES</string>
+    <string name="App2ButtonText">SCORES APP</string>
+    <string name="App3ButtonText">LIBRARY APP</string>
+    <string name="App4ButtonText">BUILD IT BIGGER</string>
+    <string name="App5ButtonText">XYZ READER</string>
+    <string name="App6ButtonText">CAPSTONE: MY OWN APP</string>
 </resources>

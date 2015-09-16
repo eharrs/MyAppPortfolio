@@ -3,71 +3,90 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#DDE9F0">
 
     <TextView android:text="@string/MainActivityTitle" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/App1Button"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_marginTop="44dp"
+        android:text="@string/App1ButtonText"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:background="#EF8A37"
+        android:onClick="onButton1Click" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/App2Button"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:textColor="#000000" />
+        android:text="@string/App2ButtonText"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/App1Button"
+        android:layout_alignLeft="@+id/App1Button"
+        android:layout_alignStart="@+id/App1Button"
+        android:textColor="#000000"
+        android:background="#EF8A37"
+        android:onClick="onButton2Click" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/App3Button"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        android:textColor="#000000" />
+        android:text="@string/App3ButtonText"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/App2Button"
+        android:layout_alignLeft="@+id/App2Button"
+        android:layout_alignStart="@+id/App2Button"
+        android:textColor="#000000"
+        android:background="#EF8A37"
+        android:onClick="onButton3Click" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/App4Button"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3"
-        android:textColor="#000000" />
+        android:text="@string/App4ButtonText"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/App3Button"
+        android:layout_alignLeft="@+id/App3Button"
+        android:layout_alignStart="@+id/App3Button"
+        android:textColor="#000000"
+        android:background="#EF8A37"
+        android:onClick="onButton4Click" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/App5Button"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button4"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4"
-        android:textColor="#000000" />
+        android:text="@string/App5ButtonText"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/App4Button"
+        android:layout_alignLeft="@+id/App4Button"
+        android:layout_alignStart="@+id/App4Button"
+        android:textColor="#000000"
+        android:background="#EF8A37"
+        android:onClick="onButton5Click" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/App6Button"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button5"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5"
-        android:textColor="#000000" />
+        android:text="@string/App6ButtonText"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/App5Button"
+        android:layout_alignLeft="@+id/App5Button"
+        android:layout_alignStart="@+id/App5Button"
+        android:textColor="#000000"
+        android:background="#CB1540"
+        android:onClick="onButton6Click" />
 
 </RelativeLayout>
