@@ -5,4 +5,26 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- Header text -->
+    <style name="HeaderText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/MainPageTitlePaddingBottom</item>
+        <item name="android:textSize">@dimen/MainPageTitleTextSize</item>
+    </style>
+
+    <!-- Buttons -->
+    <style name="RequiredProjectButtonLayout">
+        <item name="android:layout_width">@dimen/AppButtonWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/AppButtonTopMargin</item>
+        <item name="android:textColor">@color/AssignmentButtonTextColor</item>
+        <item name="android:background">@color/AssignmentButtonColor</item>
+        <item name="android:onClick">onAppButtonClick</item>
+    </style>
+
+    <style name="PersonalProjectButtonLayout" parent="RequiredProjectButtonLayout">
+        <item name="android:textColor">@color/MyProjectButtonTextColor</item>
+        <item name="android:background">@color/MyProjectButtonColor</item>
+    </style>
 </resources>

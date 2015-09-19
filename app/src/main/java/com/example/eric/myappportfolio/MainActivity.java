@@ -38,40 +38,35 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    // Click handlers
-    public void onButton1Click( View view )
+    // Button click handlers
+    public void onAppButtonClick( View v ) throws Exception
     {
-        Toast toast = Toast.makeText(this, "onButton1Click", Toast.LENGTH_SHORT);
-        toast.show();
-    }
+        String clickMessage;
+        switch( v.getId() )
+        {
+            case R.id.App1Button:
+                clickMessage = "onButton1Click";
+                break;
+            case R.id.App2Button:
+                clickMessage = "onButton2Click";
+                break;
+            case R.id.App3Button:
+                clickMessage = "onButton3Click";
+                break;
+            case R.id.App4Button:
+                clickMessage = "onButton4Click";
+                break;
+            case R.id.App5Button:
+                clickMessage = "onButton5Click";
+                break;
+            case R.id.App6Button:
+                clickMessage = "onButton6Click";
+                break;
+            default:
+                throw new Exception("Invalid id in click handler");
+        }
 
-    public void onButton2Click( View view )
-    {
-        Toast toast = Toast.makeText(this, "onButton2Click", Toast.LENGTH_SHORT);
-        toast.show();
-    }
-
-    public void onButton3Click( View view )
-    {
-        Toast toast = Toast.makeText(this, "onButton3Click", Toast.LENGTH_SHORT);
-        toast.show();
-    }
-
-    public void onButton4Click( View view )
-    {
-        Toast toast = Toast.makeText(this, "onButton4Click", Toast.LENGTH_SHORT);
-        toast.show();
-    }
-
-    public void onButton5Click( View view )
-    {
-        Toast toast = Toast.makeText(this, "onButton5Click", Toast.LENGTH_SHORT);
-        toast.show();
-    }
-
-    public void onButton6Click( View view )
-    {
-        Toast toast = Toast.makeText(this, "onButton6Click", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, clickMessage, Toast.LENGTH_SHORT);
         toast.show();
     }
 }

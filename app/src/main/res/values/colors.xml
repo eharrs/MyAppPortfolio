@@ -1,0 +1,8 @@
+<resources>
+    <color name="MainPageBackgroundColor">#DDE9F0</color>
+
+    <color name="AssignmentButtonColor">#EF8A37</color>
+    <color name="AssignmentButtonTextColor">#000000</color>
+    <color name="MyProjectButtonColor">#CB1540</color>
+    <color name="MyProjectButtonTextColor">#FFFFFF</color>
+</resources>
